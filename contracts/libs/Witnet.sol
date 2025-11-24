@@ -831,10 +831,8 @@ library Witnet {
 
     function isValid(QuerySLA memory self) internal pure returns (bool) {
         return (
-            self.witResultMaxSize >= 0
-                && self.witCommitteeSize > 0
+            self.witCommitteeSize > 0
                 && self.witCommitteeSize <= 127
-                && self.witUnitaryReward > 0
         );
     }
 
